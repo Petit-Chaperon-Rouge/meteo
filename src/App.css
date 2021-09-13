@@ -1,3 +1,7 @@
+h1 {
+  text-align: center;
+}
+
 .main-container {
   margin: 0 auto;
   max-width: 1400px;
@@ -6,6 +10,8 @@
 .search-bar-container {
   max-width: 500px;
   margin: 50px auto;
+  border: 2px solid #888181;
+  border-radius: 5px;
 }
 
 .search-bar-container .search-bar {
@@ -16,7 +22,16 @@
   background: none;
   border: none;
   outline: none;
+}
 
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 5px;
+.card-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 300px;
+  margin: 10px;
+  text-align: center;
 }

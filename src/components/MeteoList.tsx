@@ -9,9 +9,11 @@ export const MeteoList = (props: Props) => {
     return (
         <>
             <h1>{props.weather.city.name}</h1>
+            <div className="card-layout">
             {props.weather.list.map((l: any, index: number) =>
                 <Meteo weather={l} key={index} />
             )}
+            </div>
         </>
     )
 }

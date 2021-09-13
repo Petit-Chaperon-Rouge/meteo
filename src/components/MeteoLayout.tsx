@@ -8,7 +8,7 @@ export const MeteoLayout = () => {
 
 
     return (
-        <>
+        <div className="main-container">
             <SearchBar toFinish={setWeather} />
             <div>
                 {Object.keys(weather).length
@@ -16,6 +16,6 @@ export const MeteoLayout = () => {
                     : ""
                 }
             </div>
-        </>
+        </div>
     )
 }
